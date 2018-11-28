@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Pane extends Component {
-    displayName = 'Pane'
+    // displayName = 'Pane'
     render() {
         return (
             <div>

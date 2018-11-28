@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
 
 class Tabs extends Component {
-    displayName = 'Tabs'
+    // displayName = 'Tabs'
     state = {
-        selected: this.props.selected
+        selected: 0
     }
-    getDefaultProps() {
-        return {
-            selected: 0
-        };
-    }
-    getInitialState() {
-        return {
-            selected: this.props.selected
-        };
-    }
+    // getDefaultProps() {
+    //     return {
+    //         selected: 0
+    //     };
+    // }
+    // getInitialState() {
+    //     return {
+    //         selected: this.props.selected
+    //     };
+    // }
     shouldComponentUpdate(nextProps, nextState) {
+        console.log(nextProps)
+        console.log(this.state)
+        console.log(nextState)
         return this.props !== nextProps || this.state !== nextState;
     }
     handleClick(index, event) {

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Tabs from './Tabs';
 import Pane from './Pane';
 import './App.css';
+import dummyData from './dummy_data';
 
 class App extends Component {
 	render () {
@@ -9,13 +10,13 @@ class App extends Component {
     	<div>
         <Tabs selected={0}>
           <Pane label="Tab 1">
-            <div>This is my tab 1 contents!</div>
+            <div>{dummyData[0]}</div>
           </Pane>
           <Pane label="Tab 2">
-            <div>This is my tab 2 contents!</div>
+            <div>{dummyData[1]}</div>
           </Pane>
           <Pane label="Tab 3">
-            <div>This is my tab 3 contents!</div>
+            <div>{dummyData[0]}</div>
           </Pane>
         </Tabs>
       </div>
